@@ -12,6 +12,7 @@ import Confetti from 'react-confetti'
 import Popup from 'react-popup'; 
 
 function App() {
+  //useState 
   const TIME_GAME = 60;
   const [words, setWord] = useState(Words); //initial 
   const [newWord, setNewWord] = useState(words[0]);
@@ -24,6 +25,7 @@ function App() {
   const [animation, setAnimation] = useState(null);
   const [confettiStart, setConfettiStart] = useState(false);
   
+  //useSound
   const [play1, { stop }] = useSound(
     wrongAnswer,
     { volume: 0.5 }
